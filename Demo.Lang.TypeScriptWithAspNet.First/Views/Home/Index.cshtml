@@ -1,12 +1,28 @@
 ﻿@{
 	ViewBag.Title = "Home Page";
 }
-<script src="~/Scripts/App/app.js"></script>
-<div id="message"></div>
-<div>
-	Compiler: <input id="compiler" value="TypeScript" onkeyup="document.getElementById('message').innerText = sayHello()"/><br/>
-	Framework: <input id="framework" value="ASP.NET" onkeyup="document.getElementById('message').innerText = sayHello()"/>
-</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.4.1/es5-shim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.1/es6-shim.js"></script>
+
+<script src="~/Scripts/angular2-polyfills.js"></script>
+<script src="~/Scripts/system.src.js"></script>
+<script src="~/Scripts/rx.js"></script>
+<script src="~/Scripts/angular2.js"></script>
+
+
+<script>
+    System.config({
+        packages: {
+            '/Scripts/App': {
+                format: 'cjs',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('/Scripts/App/main').then(null, console.error.bind(console));
+</script>
+<my-app>Loading...</my-app>
 
 
 
