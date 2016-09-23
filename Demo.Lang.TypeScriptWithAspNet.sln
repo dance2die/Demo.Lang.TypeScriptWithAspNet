@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Lang.TypeScriptWithAspNet.First", "Demo.Lang.TypeScriptWithAspNet.First\Demo.Lang.TypeScriptWithAspNet.First.csproj", "{DD652941-7EF3-4F4B-8EB0-1E5318A36457}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{71798D96-490F-44D6-BF53-B2818FBCE8CB}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
